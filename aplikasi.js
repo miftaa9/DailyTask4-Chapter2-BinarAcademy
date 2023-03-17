@@ -57,11 +57,11 @@ rl.question('Masukkan angka 1 yang ingin dibagi? ', (angka1) => {
 
 // 5 hasil total harga kali quantitas barang
 console.log('===============[ hasil total harga kali quantitas barang ]===============');
-rl.question('Masukkan total harga? ', (price) => {
+rl.question('Masukkan harga barang? ', (price) => {
     rl.question('Masukkan quantitas barang? ', (quantity) => {
         const hasil = parseInt(price) * parseInt(quantity)
         console.log(hasil);
-        console.log(`Hasil dari ${price} * ${quantity} adalah ${hasil}!`);
+        console.log(`Total harga adalah ${hasil}!`);
         rl.close();
     });
 });
